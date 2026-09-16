@@ -3,7 +3,7 @@
 A responsive web application built with Vanilla JavaScript that interfaces directly with the official GitHub REST API, featuring asynchronous data fetching, dynamic profile rendering, repository inspection, and a head-to-head developer "Battle Mode" with star calculations.
 
 ## Live Website
-https://dev-detective-app.netlify.app
+https://dev-detective-aman.netlify.app
 
 ## Features
 
