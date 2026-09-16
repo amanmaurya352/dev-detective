@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Detective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="title">Dev<span>Detective</span></h1>
+    
+    <div class="header-btns" id="header-btns">
+        <button id="battle-toggle-btn">Battle Mode</button>
+        <button id="btn-mode" aria-label="Toggle theme">
+            <span class="toggle-thumb">
+                <span id="mode-icon">🌙</span>
+            </span>
+        </button>
+    </div>
+
+    <!-- Mobile Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-overlay" id="menu-overlay"></div>
+</header>
+
+    <div class="wrapper">
+        <main>
+
+            <div id="single-search" class="search-bar">
+                <input type="text" id="input" placeholder="Search GitHub username..." autocomplete="off">
+                <button id="submit-btn" type="button">Search</button>
+            </div>
+
+            <div id="battle-search" class="search-bar hidden">
+                <input type="text" id="input1" placeholder="User 1 username..." autocomplete="off">
+                <input type="text" id="input2" placeholder="User 2 username..." autocomplete="off">
+                <button id="battle-submit-btn" type="button">Battle!</button>
+            </div>
+            
+            <div id="loading" class="hidden loading-container">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+</div>
+
+<p id="no-results" class="hidden">User not found</p>
+
+            <div id="profile-container" class="profile-container hidden">
+
+                <div class="profile-content">
+                    <div class="profile-header">
+                        <img id="avatar" src="" alt="Avatar">
+                        <div class="profile-info-wrapper">
+                            <div class="name-container">
+                                <h2 id="name"></h2>
+                                <p id="date"></p>
+                            </div>
+                            <a id="user" href="" target="_blank"></a>
+                        </div>
+                    </div>
+
+                    <p id="bio">This profile has no bio</p>
+
+                    <div class="profile-details">
+                        <a id="page" href="" target="_blank"></a>
+                    </div>
+                    
+                    <div id="repos-container" class="repos-list"></div>
+                </div>
+            </div>
+<div id="battle-container" class="battle-container hidden">
+    <div id="battle-loading" class="hidden loading-container">
+        <div class="spinner"></div>
+        <p>Battling...</p>
+    </div>
+    <p id="battle-error" class="hidden" style="color: #e74c3c; font-weight: bold; font-size: 16px; text-align: center; margin: 20px 0;"></p>
+    <div id="battle-cards" class="battle-cards"></div>
+</div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
