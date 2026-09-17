@@ -244,7 +244,7 @@ function renderBattleCards(user1, stars1, user2, stars2) {
         </div>
     `;
 }
-// --- Mobile Hamburger Menu Toggle Logic ---
+
 const hamburger = document.getElementById("hamburger");
 const headerBtns = document.getElementById("header-btns");
 const menuOverlay = document.getElementById("menu-overlay");
